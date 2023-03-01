@@ -19,9 +19,13 @@
 :root {
     --rc-blu: #051e34;
     --rc-bg-grey:#e9ecef;
+    --rc-bg-blu:#1b72e8;
 }
 .bg_grey {
     background-color: var(--rc-bg-grey);
+}
+.bg_blu {
+    background-color: var(--rc-bg-blu);
 }
 /* #endregion utility*/
 
@@ -42,7 +46,6 @@
     width: 70px;
     background-color: var(--rc-blu);
     background-image: url("../img/sidebar-bg.png");
-    background-size: cover;
 }
 
 .content {
@@ -76,6 +79,9 @@
     }
     .logo_mobile{
         display: none;
+    }
+    .lg_whidt {
+        width: 50%!important;
     }
 }
 

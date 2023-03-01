@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/asset/css/style.css">
     <title>Document</title>
 </head>
@@ -18,16 +18,20 @@
     <header id="site_header">
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
-                <a class="logo_mobile navbar-brand p-0" href="#"><img src="./asset/img/mobile-logo.png" width="50" alt=""></a>
+                <a class="logo_mobile navbar-brand p-0" href="#"><img src="./asset/img/mobile-logo.png" width="50"
+                         alt=""></a>
                 <a class="hidden navbar-brand p-0" href="#"><img src="./asset/img/logo.svg" width="150" alt=""></a>
                 <form class="d-flex flex-grow-1" role="search">
-                    <span class="input-group-text border-0 bg_grey rounded-0 rounded-start" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input class="form-control me-2 border-0 bg_grey rounded-0 rounded-end" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    <span class="input-group-text border-0 bg_grey rounded-0 rounded-start" id="addon-wrapping"><i
+                           class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="form-control me-2 border-0 bg_grey rounded-0 rounded-end" type="search"
+                           placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link px-2" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                            <a class="nav-link px-2" aria-current="page" href="#"><i
+                                   class="fa-solid fa-list-ul"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-2" href="#"><i class="fa-solid fa-circle-question"></i></a>
@@ -38,16 +42,17 @@
                     </ul>
                 </div>
                 <div class="nav-item dropdown dropstart">
-                    <a class="nav-link px-2 text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link px-2 text-warning" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         <i class="fa-solid fa-bell"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,26 +60,124 @@
     </header>
     <!-- /#site-header -->
     <div class="bottom d-flex">
-        <div class="sidebar d-flex flex-column justify-content-between">
-            <div class="sidebar_top text-white text-center d-flex flex-column fs-5text-decoration-none">
+        <div class="sidebar py-3 d-flex flex-column justify-content-between">
+            <div class="sidebar_top text-white text-center d-flex flex-column fs-5 text-decoration-none">
                 <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-house m-2"> </i><span
-                        class="hidden">Home</span></a>
+                          class="hidden">Home</span></a>
                 <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-chart-simple m-2"></i><span
-                        class="hidden">Status</span></a>
+                          class="hidden">Status</span></a>
                 <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-signal m-2"></i><span
-                        class="hidden">Signal</span></a>
+                          class="hidden">Signal</span></a>
             </div>
             <div class="sidebar_bottom text-white text-center d-flex flex-column fs-5text-decoration-none pb-3">
                 <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-gear m-2"></i><span
-                        class="hidden">Admin</span></a>
+                          class="hidden">Admin</span></a>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <div class="content_top bg_blu">
+                <div class="row">
+                    <div class="col-12 col-md-4 p-3">
+                        <span class="px-3 fs-5 text-white">Nuovo Studente</span>
+                        <button class="btn btn-primary border border-1 bg-transparent" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                        <div class="lg_whidt offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight"
+                             aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body needs-validatio">
+                                <div class="row form-group">
+                                    <div class="col-md-6 form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                               placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Nome</label>
+                                    </div>
+                                    <div class="col-md-6 form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                               placeholder="Password">
+                                        <label for="floatinginput" class="ps-4">Cognome</label>
+                                    </div>
+                                    <div class="col-md-6 form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                               placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Email address</label>
+                                    </div>
+                                    <div class="col-md-6 form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                               placeholder="Password">
+                                        <label for="floatingPassword" class="ps-4">Password</label>
+                                    </div>
+                                    <div class="col-md-6 form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                               placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Email address</label>
+                                    </div>
+                                    <div class="col-md-6 form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                               placeholder="Password">
+                                        <label for="floatingPassword" class="ps-4">Password</label>
+                                    </div>
+                                    <div class="col-12 form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                               placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Indirizzo</label>
+                                    </div>
+                                    <div class="col-4 form-floating">
+                                        <input type="city" class="form-control" id="floatingPassword"
+                                               placeholder="città">
+                                        <label for="floatinginput" class="ps-4">Città</label>
+                                    </div>
+                                    <div class="col-4 form-floating">
+                                        <select class="form-select" id="floatingSelectGrid">
+                                            <option selected>...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelectGrid">Seleziona lo stato</label>
+                                    </div>
+                                    <div class="col-4 form-floating">
+                                        <input type="cap" class="form-control" id="floatinginput"
+                                               placeholder="Password">
+                                        <label for="floatinginput" class="ps-4">cap</label>
+                                    </div>
+
+                                    <div class="input-group col-6 py-1">
+                                        <div class="input-group-text bg-transparent border-0">
+                                            <input class="form-check-input mt-0" type="radio" value=""> <span class="px-2">Seleziona per proseguire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="submit"></label>
+                                    <div class="col-md-8">
+                                        <button id="submit" name="submit" class="btn btn-primary" value="1">Crea Profilo</button>
+                                        <a href="#" id="cancel" name="cancel" class="btn btn-default">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                    <div class="col-12 col-md-4"></div>
+
+                </div>
+            </div>
+
+            <div class="content_bottom">
+
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
