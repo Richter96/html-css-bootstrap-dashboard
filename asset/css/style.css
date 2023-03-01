@@ -7,11 +7,9 @@
     background-color: palegreen;
 }
 
-.sidebar {
-    background-color: palevioletred;
+.sidebar {}
 
-}
-.content {
+.debug .content {
     background-color: rgb(255, 215, 228);
 
 }
@@ -19,7 +17,10 @@
 /* #endregion debug */
 
 /* #region utility*/
+:root {
+    --rc-blu: #051e34;
 
+}
 
 /* #endregion utility*/
 
@@ -38,10 +39,17 @@
 
 .sidebar {
     width: 70px;
+    background-color: var(--rc-blu);
+    background-image: url("../img/sidebar-bg.png");
+    background-size: cover;
 }
 
 .content {
     width: calc(100% - 70px);
+    background-image: url(".");
+}
+.hidden {
+    display: none;
 }
 
 /* #endregion bottom*/
@@ -54,13 +62,16 @@
 
 
 /* #region @media*/
-@media screen and (min-width:992) {
+@media screen and (min-width:992px) {
     .sidebar {
         width: 150px;
     }
 
     .content {
         width: calc(100% - 150px);
+    }
+    .hidden {
+        display: inline;
     }
 }
 
