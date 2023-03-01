@@ -1,9 +1,20 @@
-
 /* #region debug*/
-#site_header {
-    height: 70px;
+.debug #site_header {
+    background-color: palegoldenrod;
 }
 
+.debug .bottom {
+    background-color: palegreen;
+}
+
+.sidebar {
+    background-color: palevioletred;
+
+}
+.content {
+    background-color: rgb(255, 215, 228);
+
+}
 
 /* #endregion debug */
 
@@ -20,14 +31,41 @@
 /* #endregion header*/
 
 
-/* #region main */
+/* #region bottom*/
+.bottom {
+    height: calc(100vh - 70px);
+}
+
+.sidebar {
+    width: 70px;
+}
+
+.content {
+    width: calc(100% - 70px);
+}
+
+/* #endregion bottom*/
 
 
-/* #endregion main*/
 
 
 
 
+
+
+/* #region @media*/
+@media screen and (min-width:992) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .content {
+        width: calc(100% - 150px);
+    }
+}
+
+
+/* #endregion @media*/
 
 
 
