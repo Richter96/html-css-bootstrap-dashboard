@@ -20,12 +20,16 @@
     --rc-blu: #051e34;
     --rc-bg-grey:#e9ecef;
     --rc-bg-blu:#1b72e8;
+    --rc-badge:#165bba;
 }
 .bg_grey {
     background-color: var(--rc-bg-grey);
 }
 .bg_blu {
     background-color: var(--rc-bg-blu);
+}
+.bg_rc-badge {
+    background-color: var(--rc-badge);
 }
 /* #endregion utility*/
 
@@ -54,6 +58,10 @@
 }
 .hidden {
     display: none!important;
+}
+
+.hidden_lg {
+    display: none;
 }
 
 /* #endregion bottom*/
@@ -85,7 +93,11 @@
     }
 }
 
-
+@media screen and (min-width:1400px) {
+    .hidden_lg {
+        display: inline-block;
+    }
+}
 /* #endregion @media*/
 
 
