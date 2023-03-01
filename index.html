@@ -14,20 +14,59 @@
     <title>Document</title>
 </head>
 
-<body class="debug">
+<body class="">
     <header id="site_header">
-
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="logo_mobile navbar-brand p-0" href="#"><img src="./asset/img/mobile-logo.png" width="50" alt=""></a>
+                <a class="hidden navbar-brand p-0" href="#"><img src="./asset/img/logo.svg" width="150" alt=""></a>
+                <form class="d-flex flex-grow-1" role="search">
+                    <span class="input-group-text border-0 bg_grey rounded-0 rounded-start" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="form-control me-2 border-0 bg_grey rounded-0 rounded-end" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                </form>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- /#site-header -->
     <div class="bottom d-flex">
         <div class="sidebar d-flex flex-column justify-content-between">
             <div class="sidebar_top text-white text-center d-flex flex-column fs-5text-decoration-none">
-                    <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-house m-2"> </i><span class="hidden" >Home</span></a>
-                    <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-chart-simple m-2"></i><span class="hidden" >Status</span></a> 
-                    <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-signal m-2"></i><span class="hidden" >Signal</span></a>
+                <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-house m-2"> </i><span
+                        class="hidden">Home</span></a>
+                <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-chart-simple m-2"></i><span
+                        class="hidden">Status</span></a>
+                <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-signal m-2"></i><span
+                        class="hidden">Signal</span></a>
             </div>
             <div class="sidebar_bottom text-white text-center d-flex flex-column fs-5text-decoration-none pb-3">
-                <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-gear m-2"></i><span class="hidden">Admin</span></a>
+                <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-gear m-2"></i><span
+                        class="hidden">Admin</span></a>
             </div>
         </div>
         <div class="content"></div>

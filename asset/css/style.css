@@ -7,7 +7,6 @@
     background-color: palegreen;
 }
 
-.sidebar {}
 
 .debug .content {
     background-color: rgb(255, 215, 228);
@@ -19,9 +18,11 @@
 /* #region utility*/
 :root {
     --rc-blu: #051e34;
-
+    --rc-bg-grey:#e9ecef;
 }
-
+.bg_grey {
+    background-color: var(--rc-bg-grey);
+}
 /* #endregion utility*/
 
 /* #region header*/
@@ -49,7 +50,7 @@
     background-image: url(".");
 }
 .hidden {
-    display: none;
+    display: none!important;
 }
 
 /* #endregion bottom*/
@@ -71,7 +72,10 @@
         width: calc(100% - 150px);
     }
     .hidden {
-        display: inline;
+        display: inline!important;
+    }
+    .logo_mobile{
+        display: none;
     }
 }
 
