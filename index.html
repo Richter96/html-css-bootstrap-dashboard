@@ -90,68 +90,71 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body needs-validatio">
-                <div class="row form-group">
-                  <div class="col-md-6 form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput" class="ps-4">Nome</label>
-                  </div>
-                  <div class="col-md-6 form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatinginput" class="ps-4">Cognome</label>
-                  </div>
-                  <div class="col-md-6 form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput" class="ps-4">Email address</label>
-                  </div>
-                  <div class="col-md-6 form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword" class="ps-4">Password</label>
-                  </div>
-                  <div class="col-md-6 form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput" class="ps-4">Email address</label>
-                  </div>
-                  <div class="col-md-6 form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword" class="ps-4">Password</label>
-                  </div>
-                  <div class="col-12 form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput" class="ps-4">Indirizzo</label>
-                  </div>
-                  <div class="col-4 form-floating mb-3">
-                    <input type="city" class="form-control" id="floatingPassword" placeholder="città">
-                    <label for="floatinginput" class="ps-4">Città</label>
-                  </div>
-                  <div class="col-4 form-floating mb-3">
-                    <select class="form-select" id="floatingSelectGrid">
-                      <option selected>...</option>
-                      <option value="1">Italia</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <label for="floatingSelectGrid">Seleziona lo stato</label>
-                  </div>
-                  <div class="col-4 form-floating">
-                    <input type="cap" class="form-control" id="floatinginput" placeholder="Password">
-                    <label for="floatinginput" class="ps-4">cap</label>
-                  </div>
-
-                  <div class="input-group col-6 py-1">
-                    <div class="input-group-text bg-transparent border-0">
-                      <input class="form-check-input mt-0" type="radio" value=""> <span class="px-2">Seleziona per
-                        proseguire</span>
+                <form action="#">
+                  <div class="row form-group">
+                    <div class="col-md-6 form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingname">
+                      <label for="floatingname" class="ps-4">Nome</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingsurname">
+                      <label for="floatingsurname" class="ps-4">Cognome</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingemail">
+                      <label for="floatingemail" class="ps-4">Email address</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword">
+                      <label for="floatingPassword" class="ps-4">Password</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingconfemail">
+                      <label for="floatingemail" class="ps-4">Conferm Email address</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3 has-clear">
+                      <input type="password" class="form-control" id="floatingconfPassword">
+                      <label for="floatingPassword" class="ps-4">Conferm Password</label>
+                    </div>
+                    <div class="col-12 form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingstreet">
+                      <label for="floatingstreet" class="ps-4">Indirizzo</label>
+                    </div>
+                    <div class="col-4 form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingcity">
+                      <label for="floatingcity" class="ps-4">Città</label>
+                    </div>
+                    <div class="col-4 form-floating mb-3">
+                      <select class="form-select" id="floatingSelectGrid">
+                        <option selected>...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label for="floatingSelectGrid">Seleziona lo stato</label>
+                    </div>
+                    <div class="col-4 form-floating">
+                      <input type="text" class="form-control" id="floatingcap">
+                      <label for="floatingcap" class="ps-4">cap</label>
+                    </div>
+  
+                    <div class="input-group col-6 py-1">
+                      <div class="input-group-text bg-transparent border-0">
+                        <input class="form-check-input mt-0" type="radio" value=""> <span class="px-2">Seleziona per
+                          proseguire</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="submit"></label>
-                  <div class="col-md-8">
-                    <button id="submit" name="submit" class="btn btn-primary" value="1">Crea
-                      Profilo</button>
-                    <a href="#" id="cancel" name="cancel" class="btn btn-default">Cancel</a>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="submit"></label>
+                    <div class="col-md-8">
+                      <button id="submit" name="submit" class="btn btn-primary">Crea Profilo</button>
+                      <input type="reset" class="btn btn-warning" value="cancella">
+                      <a href="#" id="cancel" name="cancel" class="btn btn-danger" data-bs-toggle="offcanvas">Chiudi</a>
+                    </div>
                   </div>
-                </div>
+                </form>
+
               </div>
             </div>
           </div>
@@ -179,9 +182,10 @@
             </div>
             <span class=" text-white fs-2">125</span>
           </div>
-
         </div>
       </div>
+      <!-- /main top -->
+
       <!-- main bottom-->
       <div class="main_bottom">
         <div class="container-fluid">
