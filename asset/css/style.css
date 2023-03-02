@@ -21,6 +21,7 @@
     --rc-bg-grey: #e9ecef;
     --rc-bg-blu: #1b72e8;
     --rc-badge: #165bba;
+    --rc-orange:#f26551;
 }
 
 .bg_grey {
@@ -36,6 +37,9 @@
 }
 .card-body tr {
     width: auto;
+}
+.w-table-name {
+    width: 40%;
 }
 /* #endregion utility*/
 
@@ -73,7 +77,11 @@
 .square_trash {
     width: 2rem;
     aspect-ratio: 1/1;
-
+}
+.code {
+    width: 2rem;
+    aspect-ratio: 1;
+    background-color: var(--rc-orange);
 }
 /* #endregion bottom*/
 
@@ -104,6 +112,9 @@
 
     .lg_whidt {
         width: 50% !important;
+    }
+    .w-table-name {
+        width: 60%;
     }
 }
 
