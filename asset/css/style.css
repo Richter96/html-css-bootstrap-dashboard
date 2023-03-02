@@ -8,7 +8,7 @@
 }
 
 
-.debug .content {
+.debug .main {
     background-color: rgb(255, 215, 228);
 
 }
@@ -18,19 +18,23 @@
 /* #region utility*/
 :root {
     --rc-blu: #051e34;
-    --rc-bg-grey:#e9ecef;
-    --rc-bg-blu:#1b72e8;
-    --rc-badge:#165bba;
+    --rc-bg-grey: #e9ecef;
+    --rc-bg-blu: #1b72e8;
+    --rc-badge: #165bba;
 }
+
 .bg_grey {
     background-color: var(--rc-bg-grey);
 }
+
 .bg_blu {
     background-color: var(--rc-bg-blu);
 }
+
 .bg_rc-badge {
     background-color: var(--rc-badge);
 }
+
 /* #endregion utility*/
 
 /* #region header*/
@@ -52,12 +56,13 @@
     background-image: url("../img/sidebar-bg.png");
 }
 
-.content {
+.main {
     width: calc(100% - 70px);
-    background-image: url(".");
+    overflow-y: auto;
 }
+
 .hidden {
-    display: none!important;
+    display: none !important;
 }
 
 .hidden_lg {
@@ -79,17 +84,20 @@
         width: 150px;
     }
 
-    .content {
+    .main {
         width: calc(100% - 150px);
     }
+
     .hidden {
-        display: inline!important;
+        display: inline !important;
     }
-    .logo_mobile{
+
+    .logo_mobile {
         display: none;
     }
+
     .lg_whidt {
-        width: 50%!important;
+        width: 50% !important;
     }
 }
 
@@ -98,6 +106,7 @@
         display: inline-block;
     }
 }
+
 /* #endregion @media*/
 
 
