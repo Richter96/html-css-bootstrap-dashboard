@@ -39,7 +39,7 @@
     width: auto;
 }
 .w-table-name {
-    width: 40%;
+    width: 60%;
 }
 /* #endregion utility*/
 
@@ -112,9 +112,6 @@
 
     .lg_whidt {
         width: 50% !important;
-    }
-    .w-table-name {
-        width: 60%;
     }
 }
 

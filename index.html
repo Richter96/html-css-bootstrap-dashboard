@@ -60,13 +60,13 @@
   <!-- /#site-header -->
   <div class="bottom d-flex">
     <div class="sidebar py-3 d-flex flex-column justify-content-between">
-      <div class="sidebar_top text-white text-center d-flex flex-column fs-5 text-decoration-none">
-        <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-house m-2"> </i><span
-                class="hidden">Home</span></a>
-        <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-chart-simple m-2"></i><span
-                class="hidden">Status</span></a>
-        <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-signal m-2"></i><span
-                class="hidden">Signal</span></a>
+      <div class="sidebar_top text-white text-center d-flex flex-column">
+        <a class="fs-4 btn btn-outline-secondary border-0 text-white rounded-0" href="#"><i class="fa-solid fa-house "></i><span
+                class="hidden m-2">Home</span></a>
+        <a class="fs-4 btn btn-outline-secondary border-0 text-white rounded-0" href="#"><i class="fa-solid fa-chart-simple"></i><span
+                class="hidden m-2">Status</span></a>
+        <a class="fs-4 btn btn-outline-secondary border-0 text-white rounded-0" href="#"><i class="fa-solid fa-signal"></i><span
+                class="hidden m-2">Signal</span></a>
       </div>
       <div class="sidebar_bottom text-white text-center d-flex flex-column fs-5text-decoration-none pb-3">
         <a class="text-decoration-none text-white" href="#"><i class="fa-solid fa-gear m-2"></i><span
@@ -78,8 +78,8 @@
       <div class="main_top bg_blu ">
         <div class="row m-0 justify-content-between">
           <!-- new student -->
-          <div class="col-12 col-md-4 col-lg-auto mt-4 order-md-3">
-            <span class=" fs-6 text-white">Nuovo Studente</span>
+          <div class="col-12 col-md-4 col-lg-auto my-4 order-md-3">
+            <span class=" fs-6 text-white me-2">Nuovo Studente</span>
             <button class="btn btn-primary border border-1 bg-transparent" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                  class="fa-solid fa-plus"></i></button>
@@ -89,6 +89,7 @@
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
+              <!-- canvas body -->
               <div class="offcanvas-body needs-validatio">
                 <form action="#">
                   <div class="row form-group">
@@ -137,7 +138,7 @@
                       <input type="text" class="form-control" id="floatingcap">
                       <label for="floatingcap" class="ps-4">cap</label>
                     </div>
-  
+
                     <div class="input-group col-6 py-1">
                       <div class="input-group-text bg-transparent border-0">
                         <input class="form-check-input mt-0" type="radio" value=""> <span class="px-2">Seleziona per
@@ -159,7 +160,7 @@
             </div>
           </div>
           <!-- Boolean -->
-          <div class="col-12 col-md-4 col-lg-auto text-white mt-4 order-md-1">
+          <div class="col-12 col-md-4 col-lg-auto text-white my-4 order-md-1">
             <h3>Boolean <a href="#"><span class="badge bg_rc-badge fs-6 fw-light rounded-5 ms-2">Piano blaze</span></a>
             </h3>
             <a href="#"><span class="badge bg_rc-badge mx-1 fs-6 fw-light rounded-5">3 app</span></a>
@@ -176,7 +177,7 @@
                 app</span></a>
           </div>
           <!-- online student -->
-          <div class="col-12 col-md-4 mt-4 order-md-2">
+          <div class="col-12 col-md-4 my-4 order-md-2">
             <div class="col-12">
               <span class="fs-6 text-white">Studenti online negli ultimi 30 minuti</span>
             </div>
@@ -190,22 +191,22 @@
       <div class="main_bottom">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-xl-8 flex-column d-flex">
+            <div class="col-12 col-xl-8">
               <!-- prime classi -->
-              <div class="card mt-3">
-                <div class="card-header">
-                  Prossime classi
+              <div class="card mt-3 text-center">
+                <div class="card-header text-start">
+                  <h2>Prossime classi</h2>
                 </div>
                 <div class="card-body">
                   <!-- table -->
-                  <table class="table">
+                  <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th class="w-table-name" scope="col">Nome</th>
-                        <th scope="col">Data inizio</th>
-                        <th scope="col">ROI</th>
-                        <th class="d-none d-md-block" scope="col">Stato</th>
-                        <th scope="col">Azioni</th>
+                        <th class="w-table-name text-start" scope="col">Nome</th>
+                        <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                        <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col" class="text-start">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -220,8 +221,8 @@
                           </div>
 
                         </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <div class="badge text-bg-success">Done</div>
                         </td>
@@ -246,12 +247,12 @@
                                  class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
                               <i class="fa-solid fa-code"></i>
                             </div>
-                            <span>Classe 75</span>
+                            <span>Classe 76</span>
                           </div>
 
                         </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <div class="badge text-bg-success">Done</div>
                         </td>
@@ -276,12 +277,42 @@
                                  class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
                               <i class="fa-solid fa-code"></i>
                             </div>
-                            <span>Classe 75</span>
+                            <span>Classe 77</span>
                           </div>
 
                         </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <div class="badge text-bg-warning">Process</div>
+                        </td>
+                        <td>
+                          <div class="row ">
+                            <div
+                                 class=" me-1 square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
+                              <a href="#"><i class="fa-solid fa-pencil text-secondary"></i></a>
+                            </div>
+                            <div
+                                 class="square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
+                              <a href="#"><i class="fa-solid fa-trash-can text-secondary"></i></a>
+                            </div>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="d-flex align-items-baseline">
+                            <div
+                                 class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
+                              <i class="fa-solid fa-code"></i>
+                            </div>
+                            <span>Classe 78</span>
+                          </div>
+
+                        </th>
+                        <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <div class="badge text-bg-success">Done</div>
                         </td>
@@ -306,12 +337,42 @@
                                  class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
                               <i class="fa-solid fa-code"></i>
                             </div>
-                            <span>Classe 75</span>
+                            <span>Classe 79</span>
                           </div>
 
                         </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <div class="badge text-bg-danger">Failed</div>
+                        </td>
+                        <td>
+                          <div class="row ">
+                            <div
+                                 class=" me-1 square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
+                              <a href="#"><i class="fa-solid fa-pencil text-secondary"></i></a>
+                            </div>
+                            <div
+                                 class="square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
+                              <a href="#"><i class="fa-solid fa-trash-can text-secondary"></i></a>
+                            </div>
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="d-flex align-items-baseline">
+                            <div
+                                 class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
+                              <i class="fa-solid fa-code"></i>
+                            </div>
+                            <span>Classe 80</span>
+                          </div>
+
+                        </th>
+                        <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <div class="badge text-bg-success">Done</div>
                         </td>
@@ -336,14 +397,14 @@
                                  class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
                               <i class="fa-solid fa-code"></i>
                             </div>
-                            <span>Classe 75</span>
+                            <span>Classe 81</span>
                           </div>
 
                         </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
                         <td>
-                          <div class="badge text-bg-success">Done</div>
+                          <div class="badge text-bg-danger">Failed</div>
                         </td>
                         <td>
                           <div class="row ">
@@ -366,72 +427,12 @@
                                  class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
                               <i class="fa-solid fa-code"></i>
                             </div>
-                            <span>Classe 75</span>
+                            <span>Classe 82</span>
                           </div>
 
                         </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
-                        <td>
-                          <div class="badge text-bg-success">Done</div>
-                        </td>
-                        <td>
-                          <div class="row ">
-                            <div
-                                 class=" me-1 square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
-                              <a href="#"><i class="fa-solid fa-pencil text-secondary"></i></a>
-                            </div>
-                            <div
-                                 class="square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
-                              <a href="#"><i class="fa-solid fa-trash-can text-secondary"></i></a>
-                            </div>
-                          </div>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                          <div class="d-flex align-items-baseline">
-                            <div
-                                 class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
-                              <i class="fa-solid fa-code"></i>
-                            </div>
-                            <span>Classe 75</span>
-                          </div>
-
-                        </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
-                        <td>
-                          <div class="badge text-bg-success">Done</div>
-                        </td>
-                        <td>
-                          <div class="row ">
-                            <div
-                                 class=" me-1 square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
-                              <a href="#"><i class="fa-solid fa-pencil text-secondary"></i></a>
-                            </div>
-                            <div
-                                 class="square_trash border border-2 border-secondary rounded-1 d-flex align-items-center justify-content-center">
-                              <a href="#"><i class="fa-solid fa-trash-can text-secondary"></i></a>
-                            </div>
-                          </div>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                          <div class="d-flex align-items-baseline">
-                            <div
-                                 class="code d-flex justify-content-center align-items-center rounded-5 me-2 text-white">
-                              <i class="fa-solid fa-code"></i>
-                            </div>
-                            <span>Classe 75</span>
-                          </div>
-
-                        </th>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <div class="badge text-bg-success">Done</div>
                         </td>
@@ -456,7 +457,7 @@
               <!-- faq -->
               <div class="card mt-3">
                 <div class="card-header">
-                  F.A.Q.
+                  <h2>F.A.Q.</h2>
                 </div>
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
@@ -469,12 +470,7 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                          data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <p>Clicca sul + in alto nella sezione blu*.</p>
                       </div>
                     </div>
                   </div>
@@ -488,12 +484,7 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                          data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <p>Clicca sull'icona della campanella.</p>
                       </div>
                     </div>
                   </div>
@@ -507,23 +498,20 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                          data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur excepturi magni sit
+                          ducimus tenetur expedita. Totam impedit cupiditate et at, neque voluptates aut corrupti
+                          aperiam ea eveniet quos error amet. <strong>Certo che si !!!!</strong></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-xl-4">
               <!-- to do -->
               <div class="card mt-3">
                 <div class="card-header">
-                  To do
+                 <h2>To do</h2>
                 </div>
                 <div class="card m-2">
                   <ul class="list-group list-group-flush">
@@ -562,7 +550,7 @@
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Gennaio: 1200</li>
                   <li class="list-group-item">Febbraio: 800</li>
-                  <li class="list-group-item">Marzo 1500</li>
+                  <li class="list-group-item">Marzo: 1500</li>
                 </ul>
                 <div class="card-body">
                   <a href="#" class="card-link">Visualizza report approfondito</a>
