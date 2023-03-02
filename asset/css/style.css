@@ -34,7 +34,9 @@
 .bg_rc-badge {
     background-color: var(--rc-badge);
 }
-
+.card-body tr {
+    width: auto;
+}
 /* #endregion utility*/
 
 /* #region header*/
@@ -68,7 +70,11 @@
 .hidden_lg {
     display: none;
 }
+.square_trash {
+    width: 2rem;
+    aspect-ratio: 1/1;
 
+}
 /* #endregion bottom*/
 
 
