@@ -17,19 +17,19 @@
 
 /* #region utility*/
 :root {
-    --rc-blu: #051e34;
+    --rc-sidebar: #051e34;
     --rc-bg-grey: #e9ecef;
-    --rc-bg-blu: #1b72e8;
+    --rc-bg-main_top: #1b72e8;
     --rc-badge: #165bba;
-    --rc-orange:#f26551;
+    --rc-code_sidebar:#f26551;
 }
 
 .bg_grey {
     background-color: var(--rc-bg-grey);
 }
 
-.bg_blu {
-    background-color: var(--rc-bg-blu);
+.bg_main_top {
+    background-color: var(--rc-bg-main_top);
 }
 
 .bg_rc-badge {
@@ -41,6 +41,7 @@
 .w-table-name {
     width: 60%;
 }
+
 /* #endregion utility*/
 
 /* #region header*/
@@ -58,7 +59,7 @@
 
 .sidebar {
     width: 70px;
-    background-color: var(--rc-blu);
+    background-color: var(--rc-sidebar);
     background-image: url("../img/sidebar-bg.png");
 }
 
@@ -81,7 +82,7 @@
 .code {
     width: 2rem;
     aspect-ratio: 1;
-    background-color: var(--rc-orange);
+    background-color: var(--rc-code_sidebar);
 }
 /* #endregion bottom*/
 
